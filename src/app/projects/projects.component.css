@@ -1,0 +1,10 @@
+.col-6 {
+    position: relative;
+    border: 2px solid red;
+    height: 270px;
+}
+.row {
+    height: 375px;
+    width: 1200px;
+    border: 2px dashed purple;
+}

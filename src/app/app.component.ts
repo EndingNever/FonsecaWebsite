@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,8 @@ export class AppComponent {
   selfImage:string = 'src\assets\self.jpg'
 
   bgImage:string = 'src\assets\bg_1.jpg'
+
+  constructor(private router: Router) {}
+
+  
 }
