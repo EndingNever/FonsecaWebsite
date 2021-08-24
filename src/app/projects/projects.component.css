@@ -1,5 +1,5 @@
 .col-6 {
-    /* border: 1px dashed red; */
+    border: 1px dashed red;
     /* height: 200px;
     width: 50vw; */
     /* position: relative; */
@@ -13,6 +13,9 @@
 
 .photography {
     /* border: 2px solid red; */
+    /* height: 270px; */
+    /*width: 480px; */
+    box-sizing: border-box;
     transition: background-color 1s linear;
     display: flex;
     justify-content: center;
@@ -21,9 +24,16 @@
     position: relative;
 }
 
+.photography-entry {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+    position: relative;
+}
 
-
-.photography:hover .overlay {
+.photography-entry:hover .overlay {
     position: absolute;
     top: 0;
     left: 0;
