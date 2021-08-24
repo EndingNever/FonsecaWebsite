@@ -8,8 +8,17 @@
     (mouseenter)="mouseEnter(1)"
     (mouseleave)="hover1=false"
   > 
-
-  <h3 class="overlayText" *ngIf='hover1===true'>HERCULES</h3>
+    <span class="overlayText text-center" *ngIf='hover1===true'>
+      <h3 class="pb-2">
+        Redistricting Algorithm
+      </h3>
+      <p class="pb-1">
+        Technology used to prevent bias in map districting
+      </p>
+      <h6 class="">
+        Blogpost Coming Soon!
+      </h6>
+    </span>
   <div class="overlay"></div>
 </div>  <!-- End of project, top left-->
   <div
@@ -21,9 +30,18 @@
     (mouseenter) ="mouseEnter(2)"
     (mouseleave) = "hover2=false"
   > 
-
+  <span class="overlayText text-center" *ngIf='hover2===true'>
+    <h3 class="pb-2">
+      Bulk SMS Application
+    </h3>
+    <p class="pb-1">
+      Application used to message 1000+ phone numbers
+    </p>
+    <h6 class="">
+      Blogpost Coming Soon!
+    </h6>
+  </span>
     <div class="overlay"></div>
-    <h3 class="overlayText" *ngIf='hover2===true'>HERCULES</h3>
   </div> <!-- End of project, top right-->
   <div
     class="col-6 h-50 photography"
