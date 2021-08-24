@@ -1,14 +1,50 @@
-<div class="row vh-100 d-flex justify-content-center align-items-center">
-    <div class="col-6" id="ctMap" [ngStyle]="{'background': 'url(' + ctMap + ') no-repeat center center / cover'}">
-        <!-- <img src="assets/CTMap.png" alt="" srcset="" width="100%"> -->
-    </div>
-    <div class="col-6">
-        photo!
-    </div>
-    <div class="col-6">
-        test
-    </div>
-    <div class="col-6">
-        test
-    </div>
+<div class="row p-5" >
+  <div
+    class="col-6 h-50 photography"
+    id="ctMap"
+    [ngStyle]="{
+      background: 'url(' + ctMap + ') no-repeat center center / cover'
+    }"
+    (mouseenter)="mouseEnter(1)"
+    (mouseleave)="hover1=false"
+  > 
+
+  <h3 class="overlayText" *ngIf='hover1===true'>HERCULES</h3>
+  <div class="overlay"></div>
+</div>  <!-- End of project, top left-->
+  <div
+    class="col-6 h-50 photography"
+    id="sms"
+    [ngStyle]="{
+      background: 'url(' + sms + ') no-repeat center center / cover'
+    }"
+    (mouseenter) ="mouseEnter(2)"
+    (mouseleave) = "hover2=false"
+  > 
+
+    <div class="overlay"></div>
+    <h3 class="overlayText" *ngIf='hover2===true'>HERCULES</h3>
+  </div> <!-- End of project, top right-->
+  <div
+    class="col-6 h-50 photography"
+    [ngStyle]="{
+      background: 'url(' + auto + ') no-repeat center center / cover'
+    }"
+    (mouseenter) ="mouseEnter(3)"
+    (mouseleave) = "hover3=false"
+  >
+  <div class="overlay"></div>
+    <h3 class="overlayText" *ngIf='hover3===true'>HERCULES</h3>
+  </div> <!-- End of project, top right-->
+  <div
+    class="col-6 h-50 photography"
+    [ngStyle]="{
+      background: 'url(' + bridge + ') no-repeat center center / cover'
+    }"
+    (mouseenter) ="mouseEnter(4)"
+    (mouseleave) = "hover4=false"
+  >
+  <div class="overlay"></div>
+    <h3 class="overlayText" *ngIf='hover4===true'>HERCULES</h3>
+  </div> <!-- End of project, top right-->
 </div>
