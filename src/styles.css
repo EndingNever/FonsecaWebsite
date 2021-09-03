@@ -23,7 +23,8 @@ h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-a {
+.firstcol, a {
     color: inherit;
     text-decoration: none;
+    font-family: "Montserrat", Arial, sans-serif;
 }
