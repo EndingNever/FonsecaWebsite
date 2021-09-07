@@ -14,8 +14,12 @@ h1 {
 
 .subheading {
     font-size: 24px;
-    color: #bfbfbf;
+    color: #6e6e6e;
     font-weight: 300;
+}
+
+.summary {
+    color: #6e6e6e;
 }
 
 

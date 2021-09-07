@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterModule, Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -7,6 +8,8 @@ import { RouterModule, Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
+ displayNavbar:boolean = false;
+
   title = 'Devin Fonseca';
   
 
@@ -15,5 +18,11 @@ export class AppComponent{
   bgImage:string = 'src\assets\bg_1.jpg'
 
 
+  displayNav() {
+    this.displayNavbar = !this.displayNavbar
+    console.log(this.displayNavbar)
+  }
+
+  closeNav(){}
   
 }
