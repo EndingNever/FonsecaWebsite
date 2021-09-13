@@ -1,8 +1,8 @@
 <div class="container-fluid vh-100">
 
   <div class="row">
-    <div class="d-none col-3 firstCol d-md-block text-center" >
-        <h1 class="mt-5 mb-5 ms-5 text-center d-flex justify-content-center">
+    <div class="d-none col-sm-3 col-3 firstCol d-md-block text-center " >
+        <h1 class="mt-5 mb-5">
           Devin Fonseca
         </h1>
             <div class="d-flex flex-column justify-content-center align-items-center h-50">
@@ -12,22 +12,29 @@
               <p class=""><a routerLink='/contact'routerLinkActive="active">Contact</a></p>
             </div>
     </div>
-    <div class="d-sm-block d-md-none nav">
+    <!-- NavBar -->
+    <div class="d-xs-block d-md-none nav">
       <div id="mySidebar" class="sidebar" [ngClass] = "{'open': displayNavbar==true}">
-        <a href="#"></a>
-        <a href="#">Projects</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a routerLink='./' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="displayNavbar=false">Home</a>
+        <a routerLink="/projects" routerLinkActive="active" (click)="displayNavbar=false">Projects</a>
+        <a routerLink='/resume'routerLinkActive="active" (click)="displayNavbar=false">Resume</a>
+        <a routerLink='/contact'routerLinkActive="active" (click)="displayNavbar=false">Contact</a>
       </div>
       
-      <div class="main d-flex justify-content-center" [ngClass] = "{'margin' : displayNavbar==true}">
-        <img src="assets/icons8-menu-24.png" (click)='displayNav()'>
-        <!-- <button class="openbtn" (click)="displayNav()">Sidebar~</button> -->
+      <div class="main d-flex justify-content-center" [ngClass] = "{'margin' : displayNavbar==true}" >
+        <div class="icon d-flex justify-content-center align-items-center">
+          <img class="clickOpen" src="assets/icons8-menu-24.png" (click)='displayNav()' *ngIf="displayNavbar===false">
+          <img src="assets/close.png" (click)='displayNav()' *ngIf="displayNavbar===true">
+        </div>
       </div>
     </div>
-      <div class="col-md-12 col-lg-9 mainCol d-flex justify-content-center align-items-center vh-100">
+    <!-- End Navbar -->
+
+      <div class="col-sm-12 col-md-9 mainCol d-flex justify-content-center align-items-center vh-100">
         <div class="overlay"></div>
-        <router-outlet></router-outlet>
+        <div class="row">
+          <router-outlet></router-outlet>
+        </div>
       </div>
   </div>
 </div>
