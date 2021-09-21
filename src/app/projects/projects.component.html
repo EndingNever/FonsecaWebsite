@@ -1,6 +1,128 @@
+<div class="row mainRow">
+  <!--* Top Left -->
+  <div
+    class="
+      col-12
+      col-lg-6
+      topLeft
+      d-flex
+      text-center
+      justify-content-center
+      align-items-center
+      photography-entry
+      img-fluid
+    "
+    (mouseenter)="mouseEnter(1)"
+    (mouseleave)="hover1=false">
+  >
+    <span class="overlayText text-center" *ngIf="hover1 === true">
+      <h3 class="pb-2">Redistricting Algorithm</h3>
+      <p class="pb-1">Technology used to prevent bias in map districting</p>
+      <h6 class="">Blogpost Coming Soon!</h6>
+    </span>
+    <div class="overlay"></div>
+  </div>
+  <!--* End Top Left -->
+  <!--! Top Right -->
+  <div
+    class="
+    col-12
+    col-lg-6
+      topRight
+      d-flex
+      text-center
+      justify-content-center
+      align-items-center
+      photography-entry
+      img-fluid
+    "
+    (mouseenter)="mouseEnter(2)" 
+    (mouseleave)="hover2=false">
+  >
+  <span class="overlayText text-center" *ngIf='hover2===true'>
+    <h3 class="pb-2">
+      Bulk SMS Application
+    </h3>
+    <p class="pb-1">
+      Application used to message 1000+ phone numbers
+    </p>
+    <h6>
+      Blogpost Coming Soon!
+    </h6>
+  </span>
+  <div class="overlay"></div>
+  </div>
+</div>
+<!--! End Top Right -->
+<!--? Bottom Left -->
+<div class="row mainRow">
+  <div
+    class="
+    col-12
+    col-lg-6
+      bottomLeft
+      d-flex
+      text-center
+      justify-content-center
+      align-items-center
+      photography-entry
+      img-fluid
+    "
+    (mouseenter)="mouseEnter(3)" 
+    (mouseleave)="hover3=false"
+  >
+  <span class="overlayText text-center" *ngIf='hover3===true'>
+    <h3 class="pb-2">
+      Automated Inventory Input Program
+    </h3>
+    <p class="pb-1">
+      Data Conversion Program
+    </p>
+    <h6>
+      Blogpost Coming Soon!
+    </h6>
+  </span>
+  <div class="overlay"></div>
+  </div>
+<!--? End Bottom Left -->
+
+<!--*Bottom Right -->
+  <div
+    class="
+    col-12
+    col-lg-6
+      bottomRight
+      d-flex
+      text-center
+      justify-content-center
+      align-items-center
+      photography-entry
+      img-fluid
+    "
+    (mouseenter)="mouseEnter(4)" 
+    (mouseleave)="hover4=false"
+  >
+  <span class="overlayText text-center" *ngIf='hover4===true'>
+    <h3 class="pb-2">
+      Projects From Courses And Bootcamps
+    </h3>
+    <p class="pb-1">
+      All Of My Non-"Real World" Projects
+    </p>
+    <h6>
+      Blogpost Coming Soon!
+    </h6>
+  </span>
+  <div class="overlay"></div>
+  </div>
+</div>
+<!--* End Bottom Right -->
+<!-- 
+  CHANGED 9/21/21 
+
 <div class="col-12 d-flex flex-column justify-content-center align-items-center photos">
-  <div class="row" >
-    <!--? Begin Top Left Project -->
+  <div class="row" style="border: 2px solid purple;">
+  
   <div class="col-md-6 "
   (mouseenter)="mouseEnter(1)" 
   (mouseleave)="hover1=false">
@@ -19,9 +141,7 @@
       <div class="overlay"></div>
     </div>
   </div> 
-  <!--? End of top left project-->
 
-  <!--? Begin Top Right Project -->
   <div class="col-md-6"  
   (mouseenter)="mouseEnter(2)" 
   (mouseleave)="hover2=false">
@@ -40,9 +160,7 @@
       <div class="overlay"></div>
     </div>
   </div>
-    <!--? End Top Right Project -->
 
-<!--? Begin Bottom Left Project -->
   <div class="col-md-6"  
   (mouseenter)="mouseEnter(3)" 
   (mouseleave)="hover3=false">
@@ -61,9 +179,7 @@
       <div class="overlay"></div>
     </div>
   </div>
-  <!--? End Bottom Left Project -->
 
-<!--? Begin Bottom Right Project -->
   <div class="col-md-6"  
   (mouseenter)="mouseEnter(4)" 
   (mouseleave)="hover4=false">
@@ -81,16 +197,13 @@
       </span>
       <div class="overlay"></div>
     </div>
-  </div> <!--? End Bottom Right Project -->
+  </div> 
 </div>
 </div>
-
-
-
-
+ -->
 
 <!-- Projects before updated 8/24/21 -->
-  <!-- <div
+<!-- <div
     class="col-md-6 h-50 photography img-fluid"
     id="ctMap"
     [ngStyle]="{
