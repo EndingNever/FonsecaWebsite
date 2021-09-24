@@ -1,4 +1,3 @@
-import { DevinServiceService } from './../devin-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -38,7 +37,6 @@ export class ProjectsComponent implements OnInit {
       case this.hover = 'hover4' : {
         this.hover4 = true;
         break;
-        // console.log(`hover = hover4, hover4 = ` + this.hover4);
       }
     }
   }

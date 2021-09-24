@@ -27,15 +27,12 @@ html, body {
 
 .mainCol .overlay {
     position: absolute;
-    /* height: 100vh; */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     content: '';
-    /* opacity: 1; */
     z-index: -1;
-    /* display: block; */
     background-color: rgba(255, 255, 255, 0.705);
 }
 
@@ -108,7 +105,7 @@ h1 {
 .sidebar {
     font-size: 36px;
     height: 100vh;
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 0; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -137,29 +134,19 @@ h1 {
 
 
 .icon {
-    /* border: 2px solid purple; */
     left: 10px;
-    /* position: fixed; */
     height: 100px;
     width: 50px;
 }
 
 .clickOpen {
-    /* border: 2px solid red; */
     max-height: 30px;
 }
 
 #main {
-    /* border: 2px solid red; */
-    transition: margin-left .5s; /* If you want a transition effect */
+    transition: margin-left .5s;
     padding: 20px;
   }
-
-  /* @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  } */
-
 
   .open {
     box-shadow: 0px 0px 40px 10px rgba(17, 17, 17, 0.952);;

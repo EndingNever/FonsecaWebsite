@@ -1,9 +1,9 @@
 <div class="col-12 d-none hide-mobile d-md-flex justify-content-center align-items-center" id="pdf">
     <iframe src="assets/devres.pdf#view=Fit" class="resume d-flex justify-content-center align-content-center" ></iframe>
 </div>
-<div class="col-12 text-center d-flex justify-content-center align-items-center d-md-none" *ngIf="pdf.offsetHeight===0">
-    <object class="text-center">
-        <p>Oops! Resume PDF can't load</p>
+<div class="col-12 text-center noResume d-flex justify-content-center align-items-center">
+    <div class="text-center">
+        <p>Oops! PDF can't load!</p>
         <p><a href="assets/devres.pdf" download="Devin Fonseca Resume"><u>Download Instead</u></a></p>
-    </object>
+    </div>
 </div>

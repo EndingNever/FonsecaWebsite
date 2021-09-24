@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, EventEmitter, OnInit, Output, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,7 @@ import { AfterViewInit, Component, EventEmitter, OnInit, Output, ViewChild, Elem
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent implements OnInit, AfterViewInit {
+export class ResumeComponent implements OnInit {
   pdf:any
   isLoading!:boolean
   
@@ -15,21 +15,11 @@ export class ResumeComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     const myPDF = document.getElementById("pdf")
     this.pdf = myPDF
-    console.log(this.pdf.offsetHeight) 
+    // console.log(this.pdf.offsetHeight) 
   }
 
   ngAfterViewInit(): void {
-    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
-    //Add 'implements AfterViewInit' to the class.
-    
   }
 
-  checkIfLoaded() {
-    // window.addEventListener("load", function(event) {
-    //   console.log("All resources finished loading");
-    // })
-    // this.isLoading = false;
-    // document.getElementById("pdf");
-  }
 
 }
