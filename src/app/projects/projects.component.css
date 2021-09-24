@@ -1,11 +1,10 @@
-.col-md-6 {
-    /* border: 1px dashed red; */
-    /* height: 200px;
-    width: 50vw; */
-    /* position: relative; */
-}
 
 .mainRow {
+    width: 75vw;
+    height: 50vh;
+}
+
+.secondRow {
     width: 75vw;
     height: 50vh;
 }
@@ -64,7 +63,27 @@ h6 {
 }
 @media screen and (max-width: 768px) {
     .mainRow {
-        width: 90vw;
-        height: 40vh;
+        width: 80vw;
+        height: 47vh;
     }
+
+    .secondRow {
+        width: 80vw;
+        height: 47vh;
+    }
+
+    .overlayText h3 {
+        font-size: 18px;
+        padding: 0;
+    }
+    
+    .overlayText p {
+        font-size: 12px;
+    }
+
+    .overlayText h6 {
+        font-size: 14px;
+    }
+    
+    
 }
