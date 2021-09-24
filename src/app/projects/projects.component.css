@@ -10,20 +10,20 @@
 }
 
 .topLeft {
-    background-image: url("/assets/CTMap.png");
+    background-image: url("~src/assets/CTMap.png");
 
 }
 
 .topRight {
-    background-image: url("/assets/sms.jpg");
+    background-image: url("~src/assets/sms.jpg");
 }
 
 .bottomLeft {
-    background-image: url("/assets/auto.png");
+    background-image: url("~src/assets/auto.png");
 }
 
 .bottomRight {
-    background-image: url("/assets/image_4.jpg");
+    background-image: url("~src/assets/image_4.jpg");
 }
 
 .photography-entry {
