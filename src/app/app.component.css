@@ -9,10 +9,13 @@ html, body {
     align-items: center;
     z-index: 0;
     height: 100vh;
-    background:  rgba(0, 0, 0, 0.04);;
+    background:  rgba(0, 0, 0, 0.039);
 }
 
-
+.self {
+    font-size: .7rem;
+    color: rgba(128, 128, 128, 0.479);
+}
 
 .mainCol {
     background-image: url('src\assets\bg_1.jpg');
@@ -112,7 +115,7 @@ h1 {
     right: 25px;
     left: 0;
     margin-left: 0px;
-    background-color: rgba(17, 17, 17, 0.952); /* Black*/
+    background-color: rgba(223, 223, 223, 0.966); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -132,6 +135,22 @@ h1 {
     color: #818181;
 }
 
+.sidebar a:active {
+    color: black;
+    transition: 0ms;
+}
+
+.sidebar .active{
+    color: black;
+    border-bottom:none;
+}
+
+.sidebar .sidebarSelf {
+    margin-top: 80%;
+    height: 100%;
+    font-size: .73rem;
+    color: rgba(128, 128, 128, 0.281);
+}
 
 .icon {
     left: 10px;

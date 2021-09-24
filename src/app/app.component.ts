@@ -1,13 +1,11 @@
-import { NgClass } from '@angular/common';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { RouterModule, Router, NavigationEnd } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent{
+export class AppComponent implements OnInit{
  displayNavbar:boolean = false;
 
   title = 'Devin Fonseca';
@@ -17,12 +15,13 @@ export class AppComponent{
 
   bgImage:string = 'src\assets\bg_1.jpg'
 
+  ngOnInit() {
+    console.log("Created by Fabian Villasenor")
+  }
 
   displayNav() {
     this.displayNavbar = !this.displayNavbar
     console.log(this.displayNavbar)
   }
-
-  closeNav(){}
   
 }

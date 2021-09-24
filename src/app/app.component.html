@@ -1,26 +1,31 @@
 <div class="container-fluid vh-100">
-
-  <div class="row">
-    <div class="d-none col-sm-3 col-3 firstCol d-md-block text-center " >
+  <div class="row" >
+    <div class="d-none col-sm-3 col-3 firstCol d-md-flex flex-column justify-content-between align-items-center text-center ">
         <h1 class="mt-5 mb-5">
           Devin Fonseca
         </h1>
-            <div class="d-flex flex-column justify-content-center align-items-center h-50">
-              <p class=""><a routerLink='./' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></p>
-              <p class=""><a routerLink='/projects' routerLinkActive="active">Projects</a></p>
-              <p class=""><a routerLink='/resume'routerLinkActive="active">Resume</a></p>
-              <p class=""><a routerLink='/contact'routerLinkActive="active">Contact</a></p>
-            </div>
+          <div class="d-flex flex-column justify-content-center align-items-center h-50">
+            <p class=""><a routerLink='./' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></p>
+            <p class=""><a routerLink='/projects' routerLinkActive="active">Projects</a></p>
+            <p class=""><a routerLink='/resume'routerLinkActive="active">Resume</a></p>
+            <p class=""><a routerLink='/contact'routerLinkActive="active">Contact</a></p>
+          </div>
+          <div class="col-12">
+            <a class="self" href="mailto:exionite@gmail.com"> <p class="m-0 self">Created by Fabian Villasenor</p></a>
+          </div>
     </div>
     <!-- NavBar -->
-    <div class="d-xs-block d-md-none nav">
-      <div id="mySidebar" class="sidebar" [ngClass] = "{'open': displayNavbar==true}">
-        <a routerLink='./' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="displayNavbar=false">Home</a>
-        <a routerLink="/projects" routerLinkActive="active" (click)="displayNavbar=false">Projects</a>
-        <a routerLink='/resume'routerLinkActive="active" (click)="displayNavbar=false">Resume</a>
-        <a routerLink='/contact'routerLinkActive="active" (click)="displayNavbar=false">Contact</a>
-      </div>
-      
+    <div class="d-xs-flex d-md-none nav" >
+      <div id="mySidebar" class="sidebar d-flex flex-column" [ngClass] = "{'open': displayNavbar==true}" >
+        <a class="sidebarRoutes" routerLink='./' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="displayNavbar=false">Home</a>
+        <a class="sidebarRoutes" routerLink="/projects" routerLinkActive="active" (click)="displayNavbar=false">Projects</a>
+        <a class="sidebarRoutes" routerLink='/resume'routerLinkActive="active" (click)="displayNavbar=false">Resume</a>
+        <a class="sidebarRoutes" routerLink='/contact'routerLinkActive="active" (click)="displayNavbar=false">Contact</a>
+            <a class="sidebarSelf d-flex align-items-end" href="mailto:exionite@gmail.com">
+              Created by Fabian Villasenor
+            </a>
+      </div> 
+
       <div class="main d-flex justify-content-center" [ngClass] = "{'margin' : displayNavbar==true}" >
         <div class="icon d-flex justify-content-center align-items-center">
           <img class="clickOpen" src="assets/icons8-menu-24.png" (click)='displayNav()' *ngIf="displayNavbar===false">
