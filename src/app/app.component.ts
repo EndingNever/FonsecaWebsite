@@ -17,11 +17,10 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     console.log("Created by Fabian Villasenor")
+    console.log(`Icon courtesy of Wenjie https://thenounproject.com/wenjiejiang/`)
   }
 
   displayNav() {
     this.displayNavbar = !this.displayNavbar
-    console.log(this.displayNavbar)
   }
-  
 }
