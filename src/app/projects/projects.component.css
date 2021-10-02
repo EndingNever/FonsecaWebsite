@@ -18,12 +18,10 @@
     background-image: url("~src/assets/sms.jpg");
 }
 
-.bottomLeft {
-    background-image: url("~src/assets/auto.png");
-}
+
 
 .bottomRight {
-    background-image: url("~src/assets/image_4.jpg");
+    background-image: url("~src/assets/auto.png");
 }
 
 .photography-entry {
@@ -32,6 +30,13 @@
     background-position: center center;
     z-index: 0;
     position: relative;
+}
+
+.bottomLeft {
+    background-image: url("~src/assets/projects.png");
+    background-size: 100% 100%;
+    background-position: center;
+    /* border: 2px solid red; */
 }
 
 .photography-entry:hover .overlay {
