@@ -21,7 +21,7 @@
 
 
 .bottomRight {
-    background-image: url("~src/assets/auto.png");
+    background-image: url("~src/assets/projects.png");
 }
 
 .photography-entry {
@@ -33,7 +33,7 @@
 }
 
 .bottomLeft {
-    background-image: url("~src/assets/projects.png");
+    background-image: url("~src/assets/auto.png");
     background-size: 100% 100%;
     background-position: center;
     /* border: 2px solid red; */
