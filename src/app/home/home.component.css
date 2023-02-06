@@ -3,11 +3,11 @@ h1 {
 }
 
 .photo {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-size: cover;
-    background-image: url('../../assets/self.jpg');
-    background-position: 0px -60px;
+    background-image: url('../../assets/FonsecaIMG2023.jpg');
+    background-position: left 50% top 0%;
     background-repeat: no-repeat;
     border-radius: 50%;
 }

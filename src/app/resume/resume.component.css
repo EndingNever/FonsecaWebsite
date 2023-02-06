@@ -15,6 +15,13 @@
     position: absolute;
     right: 0px;
     left: 0px;
+    border: none;
+}
+
+.resumeImg-mobile{
+    border: 2px solid gray;
+    width: 80vw;
+    height: auto;
 }
 
 @media screen and (max-width: 767px) {
